@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler # Required for joblib
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="GDM Risk Assessment",
+    page_title="Diabetes Prediction For Preganant Women",
     page_icon="🤰",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -117,8 +117,8 @@ def st_shap(plot, height=None):
     st.components.v1.html(shap_html, height=height)
 
 # --- UI LAYOUT ---
-st.title('🤰 Gestational Diabetes (GDM) Risk Assessment')
-st.markdown("This tool assesses the risk of GDM in expectant mothers and provides tailored dietary guidance.")
+st.title('🤰Diabetes Prediction For Preganant Women')
+st.markdown("This tool assesses the risk of Gestational Diabetes (GDM) in expectant mothers and provides tailored dietary guidance.")
 st.write('---')
 
 # --- SIDEBAR ---
