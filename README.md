@@ -1,4 +1,4 @@
-# 🤰 Gestational Diabetes Risk Assessment & Dietary Guidance App
+# 🤰 Diabetes Prediction For Preganant Women
 
 An end-to-end machine learning application that assesses the risk of **Gestational Diabetes Mellitus (GDM)** in expectant mothers and provides personalized, pregnancy-safe dietary recommendations.
 
