@@ -2,7 +2,7 @@
 
 An end-to-end machine learning application that assesses the risk of **Gestational Diabetes Mellitus (GDM)** in expectant mothers and provides personalized, pregnancy-safe dietary recommendations.
 
-![Main Application Dashboard](./assets/app_dashboard%201.png)
+![Main Application Dashboard](https://github.com/Rudhan7676/Diabetes-Prediction-For-Preganant-Women-/blob/main/assets/app_dashboard%201.png?raw=true)
 
 ---
 
