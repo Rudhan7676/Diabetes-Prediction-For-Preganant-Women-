@@ -1,8 +1,8 @@
-# 🤰 GDM Risk Assessment & Dietary Guidance App
+# 🤰 Diabetes Prediction For Preganant Women
 
 An end-to-end machine learning application that assesses the risk of **Gestational Diabetes Mellitus (GDM)** in expectant mothers and provides personalized, pregnancy-safe dietary recommendations.
 
-![Main Application Dashboard](./assets/app_dashboard.png)
+![Main Application Dashboard](./assets/app_dashboard%201.png)
 
 ---
 
@@ -23,7 +23,7 @@ The entire application is built with a user-friendly interface using Streamlit, 
 ### 📈 Multi-Tier Risk Assessment & Visualization
 The app translates the raw probability score into four clear, color-coded risk levels and displays it on an intuitive gauge chart.
 
-![Risk Score Gauge](./assets/app_dashboard.png)
+![Risk Score Gauge](./assets/app_dashboard%202.png)
 
 ### 🤖 Explainable AI (XAI) with SHAP
 Users can click to see an interactive SHAP force plot that explains exactly which factors contributed to their specific risk score, and by how much. This builds trust and transparency.
