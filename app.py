@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler # Required for joblib
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="Diabetes Prediction For Preganant Women",
+    page_title="Diabetes Prediction For Pregnant Women",
     page_icon="🤰",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -112,7 +112,7 @@ def predict_diabetes(data):
     prediction_proba = model.predict_proba(scaled_input)
     return prediction[0], prediction_proba[0], scaled_input
 
-def st_shap(plot, height=None):
+def st_shap(plot, height=600): # Increased height here
     shap_html = f"<head>{shap.getjs()}</head><body>{plot.html()}</body>"
     st.components.v1.html(shap_html, height=height)
 
@@ -178,14 +178,14 @@ if st.sidebar.button('**Assess Risk & Get Diet Plan**', type="primary"):
         st.subheader('2. Prediction Explanation')
         shap_values = explainer.shap_values(scaled_input)
         force_plot = shap.force_plot(explainer.expected_value, shap_values[0,:], pd.DataFrame([user_data]), matplotlib=False)
-        st_shap(force_plot, 400)
+        st_shap(force_plot, 600) # Increased height here
         st.markdown("""*This chart shows which factors pushed the risk score higher (red) or lower (blue). Longer bars have a bigger impact.*""")
-    
+
     st.write("---")
 
     st.subheader(f"3. Dietary Guidance for a '{risk_name}' Status")
     st.warning("🚨 **Disclaimer:** This is an educational tool, not medical advice. Please consult your doctor or a registered dietitian for a personalized pregnancy nutrition plan.", icon="⚠️")
-    
+
     recommendations = food_recommendations[risk_name]
     veg_tab, nonveg_tab = st.tabs(["🍛 Indian (Vegetarian)", "🍗 Indian (Non-Vegetarian)"])
 
@@ -198,7 +198,7 @@ if st.sidebar.button('**Assess Risk & Get Diet Plan**', type="primary"):
         if 'General Advice' in recommendations['Indian (Veg)']:
             for item in recommendations['Indian (Veg)']['General Advice']:
                 st.markdown(f"• {item}")
-    
+
     with nonveg_tab:
         for meal, items in recommendations['Indian (Non-Veg)'].items():
             if meal not in ['Description', 'General Advice']:
