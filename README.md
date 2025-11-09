@@ -5,6 +5,8 @@ An end-to-end machine learning application that assesses the risk of **Gestation
 ![Main Application Dashboard](https://github.com/Rudhan7676/Diabetes-Prediction-For-Preganant-Women-/blob/main/assets/app_dashboard%201.png?raw=true)
 
 ---
+🚀 Live Demo Link https://diabetes-prediction-for-preganant-women.streamlit.app/
+
 
 ## ✨ Project Overview
 
